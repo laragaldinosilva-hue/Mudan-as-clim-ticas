@@ -56,3 +56,229 @@
 
         nav a {
             color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 18px;
+            border-radius: 5px;
+            background-color: #0b132b;
+            border: 1px solid #3a506b;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #00b4d8;
+            color: #0b132b;
+        }
+
+        /* CONTAINER PRINCIPAL */
+        .container {
+            width: 90%;
+            max-width: 850px;
+            margin: 40px auto;
+        }
+
+        /* BLOCOS DE CONTEÚDO (CARDS) */
+        .card {
+            background-color: #1c2541;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid #3a506b;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .card h2 {
+            color: #00b4d8;
+            font-size: 1.8rem;
+            margin-bottom: 18px;
+            border-bottom: 2px solid #3a506b;
+            padding-bottom: 10px;
+        }
+
+        .card p {
+            text-align: justify;
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        .card ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        .card li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .card strong {
+            color: #90e0ef;
+        }
+
+        /* CAIXAS DE IMAGENS */
+        .image-box {
+            width: 100%;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #00b4d8;
+        }
+
+        .caption {
+            display: block;
+            font-size: 0.9rem;
+            color: #90e0ef;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* BOTÃO INTERATIVO E JS */
+        button {
+            background-color: #00b4d8;
+            color: #0b132b;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #90e0ef;
+            transform: translateY(-2px);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #mensagemOculta {
+            margin-top: 20px;
+            padding: 18px;
+            background-color: #0b132b;
+            border-left: 4px solid #00b4d8;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        /* RODAPÉ */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #000814;
+            color: #8d99ae;
+            font-size: 0.9rem;
+            border-top: 1px solid #1c2541;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Consciência Climática</h1>
+        <p>O impacto do aquecimento global, as suas causas, riscos e o que precisamos fazer hoje</p>
+    </header>
+
+    <nav>
+        <a href="#introducao">Introdução</a>
+        <a href="#causas">Causas</a>
+        <a href="#riscos">Riscos e Consequências</a>
+        <a href="#solucoes">Soluções</a>
+    </nav>
+
+    <main class="container">
+
+        <section id="introducao" class="card">
+            <h2>O que são as Mudanças Climáticas?</h2>
+            <p>
+                As mudanças climáticas referem-se a alterações de longo prazo nas temperaturas e nos padrões climáticos globais. Embora o clima da Terra já tenha mudado naturalmente ao longo de eras geológicas, a ciência confirma que, desde a Revolução Industrial no século XIX, as atividades humanas são a principal causa da aceleração desenfreada desse fenômeno.
+            </p>
+            <p>
+                A queima de combustíveis fósseis, o desmatamento e os processos industriais libertam enormes quantidades de gases de efeito de estufa na atmosfera. Esses gases funcionam como um "cobertor" ao redor do planeta, retendo o calor do Sol e elevando gradativamente a temperatura média da Terra.
+            </p>
+
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop" alt="Iceberg flutuando no oceano azul escuro">
+                <span class="caption">O derretimento acelerado das calotas polares altera o nível do mar e o equilíbrio dos oceanos.</span>
+            </div>
+        </section>
+
+        <section id="causas" class="card">
+            <h2>As Principais Causas</h2>
+            <p>
+                A crise climática atual é impulsionada por escolhas de consumo, produção de energia e uso do solo que emitem poluição atmosférica contínua. As origens mais impactantes incluem:
+            </p>
+            <ul>
+                <li><strong>Queima de Combustíveis Fósseis:</strong> Petróleo, gás natural e carvão usados para gerar eletricidade, aquecimento e combustível para veículos libertam bilhões de toneladas de CO₂ todos os anos.</li>
+                <li><strong>Desmatamento e Queimadas:</strong> As florestas absorvem carbono. Quando são derrubadas ou queimadas para dar lugar a áreas urbanas ou pastos, esse carbono regressa à atmosfera.</li>
+                <li><strong>Agropecuária Intensiva:</strong> A criação de gado produz quantidades elevadas de metano (CH₄), um gás muito mais potente que o CO₂ no aprisionamento de calor no curto prazo.</li>
+                <li><strong>Produção Industrial e Lixo:</strong> A fabricação de plásticos, cimento e produtos químicos gera resíduos e emissões diretas que agravam a poluição global.</li>
+            </ul>
+        </section>
+
+        <section id="riscos" class="card">
+            <h2>Riscos e Consequências para o Planeta</h2>
+            <p>
+                As consequências do aquecimento global não se limitam ao aumento da temperatura média. Elas afetam ecossistemas inteiros, a economia global e a sobrevivência de comunidades humanas.
+            </p>
+
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?q=80&w=800&auto=format&fit=crop" alt="Tempestade e oceano agitado em tom azul escuro">
+                <span class="caption">Eventos meteorológicos extremos, como tempestades intensas e furacões, tornam-se cada vez mais frequentes.</span>
+            </div>
+
+            <ul>
+                <li><strong>Eventos Climáticos Extremos:</strong> Secas severas, ondas de calor mortais, inundações avassaladoras e tufões mais frequentes.</li>
+                <li><strong>Elevação do Nível do Mar:</strong> Com a expansão térmica da água e o derretimento de gelo, cidades costeiras enfrentam ameaças reais de inundação permanente.</li>
+                <li><strong>Insegurança Alimentar e Hídrica:</strong> Alterações nas estações de chuva prejudicam colheitas agrícolas e reduzem o acesso à água potável em várias regiões.</li>
+                <li><strong>Perda da Biodiversidade:</strong> Milhares de espécies animais e vegetais correm o risco de extinção por não conseguirem adaptar-se a mudanças tão rápidas.</li>
+            </ul>
+        </section>
+
+        <section id="solucoes" class="card">
+            <h2>O que Pode Ser Feito?</h2>
+            <p>
+                Para mitigar os piores cenários das mudanças climáticas, é fundamental agir de forma rápida e global. Isso envolve a transição imediata para energias renováveis (solar e eólica), reflorestamento massivo e políticas públicas rígidas contra o desperdício e a poluição.
+            </p>
+            <p>
+                A nível individual, reduzir a pegada de carbono através do transporte sustentável, do consumo consciente e da cobrança de ações aos governantes são passos indispensáveis.
+            </p>
+
+            <button id="btnMensagem">Ver Mensagem de Reflexão</button>
+            <p id="mensagemOculta" class="hidden">"O planeta não nos pertence; nós é que pertencemos ao planeta. Proteger o clima é proteger o nosso próprio futuro."</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Projeto de Conscientização Climática — Hospedado no GitHub Pages</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btnMensagem = document.getElementById('btnMensagem');
+            const mensagemOculta = document.getElementById('mensagemOculta');
+
+            btnMensagem.addEventListener('click', () => {
+                if (mensagemOculta.classList.contains('hidden')) {
+                    mensagemOculta.classList.remove('hidden');
+                    btnMensagem.textContent = 'Ocultar Mensagem';
+                } else {
+                    mensagemOculta.classList.add('hidden');
+                    btnMensagem.textContent = 'Ver Mensagem de Reflexão';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

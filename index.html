@@ -3,69 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mudanças Climáticas: Causas, Riscos e Soluções</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <title>Mudanças Climáticas: Impactos e Soluções</title>
+    <style>
+        /* RESET E CONFIGURAÇÕES GERAIS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <header>
-        <h1>Consciência Climática</h1>
-        <p>Entendendo a crise global para proteger o nosso futuro</p>
-    </header>
+        body {
+            background-color: #0b132b; /* Azul escuro principal */
+            color: #e0e1dd; /* Texto claro */
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            width: 100%;
+        }
 
-    <nav>
-        <a href="#introducao">Introdução</a>
-        <a href="#causas">Causas</a>
-        <a href="#riscos">Riscos e Consequências</a>
-        <a href="#solucoes">O que fazer?</a>
-    </nav>
+        /* CABEÇALHO */
+        header {
+            background: linear-gradient(180deg, #1c2541 0%, #0b132b 100%);
+            text-align: center;
+            padding: 50px 20px 30px 20px;
+            border-bottom: 3px solid #00b4d8;
+        }
 
-    <main class="container">
+        header h1 {
+            color: #48cae4;
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
 
-        <section id="introducao" class="card">
-            <h2>O que são as Mudanças Climáticas?</h2>
-            <p>
-                As mudanças climáticas referem-se a transformações de longo prazo nas temperaturas e nos padrões climáticos globais. 
-                Embora alterações no clima ocorram naturalmente ao longo de milênios, desde o século XIX as atividades humanas têm sido o principal motor dessas mudanças, 
-                principalmente devido à queima de combustíveis fósseis como carvão, petróleo e gás natural.
-            </p>
-            <p>
-                Essas ações aumentam a concentração de gases de efeito estufa na atmosfera, criando uma camada que retém o calor do Sol e eleva gradativamente a temperatura média do planeta.
-            </p>
-            
-            <div class="image-box">
-                <img src="https://images.unsplash.com/photo-1569163139599-0f4517e36f51?q=80&w=800&auto=format&fit=crop" alt="Derretimento de geleiras e aquecimento global">
-                <span class="caption">Impactos visíveis do aquecimento global no ecossistema e nas geleiras.</span>
-            </div>
-        </section>
+        header p {
+            color: #90e0ef;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
-        <section id="causas" class="card">
-            <h2>Principais Causas</h2>
-            <p>
-                A aceleração do aquecimento global está diretamente ligada ao modelo industrial e de consumo da sociedade moderna. Entre os fatores mais determinantes estão:
-            </p>
-            <ul>
-                <li><strong>Queima de Combustíveis Fósseis:</strong> A geração de energia e o transporte movido a derivados de petróleo liberam grandes quantidades de dióxido de carbono ($CO_2$).</li>
-                <li><strong>Desmatamento:</strong> A derrubada de florestas reduz a capacidade do planeta de absorver $CO_2$. Quando as árvores são queimadas, o carbono armazenado nelas é liberado de volta à atmosfera.</li>
-                <li><strong>Agropecuária Intensiva:</strong> A criação de gado produz grandes volumes de metano ($CH_4$), um gás de efeito estufa significativamente mais potente que o $CO_2$ em curto prazo.</li>
-                <li><strong>Consumo Excessivo e Lixo:</strong> A produção em massa de bens materiais e o descarte inadequado geram emissões contínuas em toda a cadeia produtiva.</li>
-            </ul>
-        </section>
+        /* MENU DE NAVEGAÇÃO */
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            background-color: #1c2541;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-        <section id="riscos" class="card">
-            <h2>Riscos e Consequências</h2>
-            <p>
-                Os impactos do desequilíbrio climático não afetam apenas a natureza, mas ameaçam diretamente a economia, a saúde e a segurança alimentar de bilhões de pessoas ao redor do mundo.
-            </p>
-            
-            <div class="image-box">
-                <img src="https://images.unsplash.com/photo-1504386106331-3e4e71712b38?q=80&w=800&auto=format&fit=crop" alt="Solo seco e rachado devido à seca extrema">
-                <span class="caption">Secas severas comprometem a agricultura e o abastecimento de água potável.</span>
-            </div>
-
-            <p><strong>Principais Consequências Observadas:</strong></p>
-            <ul>
-                <li><strong>Eventos Climáticos Extremos:</strong> Aumento na frequência e intensidade de furacões, secas severas, ondas de calor e tempestades avassaladoras.</li>
-                <li><strong>Elevação do Nível do Mar:</strong> O derretimento das calotas polares ameaça cidades costeiras e ilhas inteiras com inundações permanentes.</li>
-                <li><strong>Perda de Biodiversidade:</strong> Espécies de animais e plantas não conseguem se adaptar com rapidez suficiente, levando à extinção de ecossistemas inteiros.</li>
-                <li><strong>Insegurança Alimentar e Hídrica:</strong> A alter
+        nav a {
+            color: #ffffff;
